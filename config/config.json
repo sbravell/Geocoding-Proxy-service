@@ -1,0 +1,16 @@
+{
+  "services" : [
+    {
+        "name"        : "google-maps",
+        "endpoint"    : "https://maps.googleapis.com/maps/api/geocode/json",
+        "key"         : "",
+        "priority"    : 0.9
+    },
+    {
+        "name"        : "bing-maps",
+        "endpoint"    : "https://dev.virtualearth.net/REST/v1/Locations",
+        "key"         : "",
+        "priority"    : 1
+    }
+  ]
+}
