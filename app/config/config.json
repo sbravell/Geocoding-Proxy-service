@@ -1,16 +1,18 @@
 {
   "services" : [
     {
-        "name"        : "google-maps",
+        "name"        : "google",
+        "classname"   : "GoogleMapsApi",
         "endpoint"    : "https://maps.googleapis.com/maps/api/geocode/json",
         "key"         : "",
-        "priority"    : 0.9
+        "priority"    : 1
     },
     {
-        "name"        : "bing-maps",
+        "name"        : "bing",
+        "classname"   : "BingMapsApi",
         "endpoint"    : "https://dev.virtualearth.net/REST/v1/Locations",
         "key"         : "",
-        "priority"    : 1
+        "priority"    : 0.9
     }
   ]
 }

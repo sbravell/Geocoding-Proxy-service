@@ -1,21 +1,21 @@
 """Packaging settings."""
 from setuptools import Command, find_packages, setup
-from src import __version__
+from app import __version__
 
 setup(
-    name = 'Geocoding Proxy',
+    name = 'Geocoding Proxy with a RESTful API Interface',
     version = __version__,
-    description = 'A command line tool that returns a longitude and latitude from mutiple geocoding services',
+    description = 'A longitude and latitude from mutiple geocoding services',
     author = 'Leo Shin',
     author_email = 'leo@sh1n.com',
     packages = find_packages(exclude=['docs', 'tests*']),
-    install_requires = ['docopt', 'requests'],
+    install_requires = ['requests', 'flask'],
     extras_require = {
         'test': ['coverage', 'pytest', 'pytest-cov'],
     },
     entry_points = {
         'console_scripts': [
-            'geocoding_proxy=src.geocoding_proxy:main',
+            'geocoding_proxy=app.main:main',
         ],
     }
 )
